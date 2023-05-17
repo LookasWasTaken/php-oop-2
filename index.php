@@ -22,27 +22,27 @@ include __DIR__ . "/db.php"
     <div class="container py-5">
         <h1 class="text-center text-danger">PC COMPONENTS</h1>
         <div class="row py-4">
-            <?php foreach ($components as $comp) : ?>
-                <div class="col-8 mx-auto">
+            <?php foreach ($computers as $pc) : ?>
+                <div class="col-6 mx-auto">
                     <div class="card m-4">
                         <div class="card-header bg-dark">
-                            <h4 class="text-center text-success"><?php echo ($comp->name) ?></h4>
+                            <h4 class="text-center text-success"><?php echo ($pc->brand) ?></h4>
                         </div>
                         <div class="card-body">
                             <div>
-                                <h6>Director: <?php echo ($comp->name) ?></h6>
+                                <h6>Director: <?php echo ($pc->pc) ?></h6>
                             </div>
                             <div>
-                                <h6>Genre: <?php echo ($comp->name) ?></h6>
+                                <h6>Genre: <?php echo ($pc->pc) ?></h6>
                             </div>
                             <div>
-                                <h6>Duration: <?php echo ($comp->name) ?>min</h6>
+                                <h6>Duration: <?php echo ($pc->pc) ?></h6>
                             </div>
                             <div>
-                                <h6>Average Vote: <?php echo ($comp->name) ?> from IMDb</h6>
+                                <h6>Average Vote: <?php echo ($pc->pc) ?></h6>
                             </div>
                             <div>
-                                <h6>Language: <?php echo ($comp->name) ?></h6>
+                                <h6>Language: <?php echo ($pc->pc) ?></h6>
                             </div>
                         </div>
                     </div>
