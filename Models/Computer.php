@@ -19,4 +19,8 @@ class Computer {
         $this->gpu = $gpu;
         $this->storage = $storage;
     }
+
+    public function getParam($param){
+        return $this->$param;
+    }
 }
