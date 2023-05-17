@@ -6,4 +6,8 @@ class Desktop extends Computer {
         parent::__construct($brand, $model,$mobo,$os,$ram,$cpu,$gpu,$storage);
         $this->case = $case;
     }
+
+    public function getType() {
+        return "ATX";
+    }
 }

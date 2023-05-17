@@ -36,7 +36,7 @@ include __DIR__ . "/db.php"
                                     <h6><?php echo $pc->getParam("brand") ?> Model  <?php echo $pc->getParam("model") ?></h6>
                                 </li>
                                 <li>
-                                    <h6>Type: ph</h6>
+                                    <h6>Type: <?php echo $pc->getType() ?></h6>
                                     <hr>
                                 </li>
                                 <li>
@@ -57,12 +57,15 @@ include __DIR__ . "/db.php"
                                 <li>
                                     <h6>Storage: <?php echo $pc->getParam("storage") ?></h6>
                                 </li>
+                                <?php if($pc instanceof Desktop) : ?>
                                 <li>
                                     <h6>Case: <?php echo $pc->getParam("case") ?></h6>
                                 </li>
+                                <?php else : ?>
                                 <li>
                                     <h6>Power Supply Unit: <?php echo $pc->getParam("psu") ?></h6>
                                 </li>
+                                <?php endif ?>
                             </ul>
                         </div>
                     </div>

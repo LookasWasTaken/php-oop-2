@@ -6,4 +6,8 @@ class Laptop extends Computer {
         parent::__construct($brand, $model,$mobo,$os,$ram,$cpu,$gpu,$storage);
         $this->psu = $psu;
     }
+
+    public function getType() {
+        return "Laptop";
+    }
 }

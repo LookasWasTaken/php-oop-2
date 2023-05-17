@@ -23,4 +23,8 @@ class Computer {
     public function getParam($param){
         return $this->$param;
     }
+
+    public function getType() {
+        return "Computer";
+    }
 }
