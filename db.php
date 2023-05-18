@@ -1,6 +1,8 @@
 <?php
 $computers = [
     // ("brand", "model", "mobo", "os", "ram", "cpu", "gpu", "storage")
+    // new Computer("brand", "model", "mobo", "os", "ram", "cpu", "gpu", "storage"),
+    // remove comment in line 4 for check the exception error
     new Desktop("Asus ROG Strix", "GL12CM-DS762", "Asus ROG Strix B360-G Gaming", "Windows 10", "16GB DDR4", "Intel Core i7-8700", "NVIDIA GeForce RTX 2080", "1TB HDD + 512GB SSD", "Mid Tower Case"),
     new Desktop("HP Pavilion", "690-0010", "HP Pavilion 690", "Windows 10", "8GB DDR4", "AMD Ryzen 5 2600", "AMD Radeon RX 580", "1TB HDD", "Micro ATX Case"),
     new Desktop("Dell Alienware", "Aurora R10", "Dell Alienware 0KM8R3", "Windows 10", "32GB DDR4", "AMD Ryzen 9 5900X", "NVIDIA GeForce RTX 3080", "1TB SSD", "Full Tower Case"),

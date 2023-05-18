@@ -11,10 +11,14 @@ trait Portability
 
     public function setPortable($pc)
     {
-        if($pc instanceof Desktop){
-            return $this->portable = "NOT Portable";
+        if (!($pc instanceof Desktop) && !($pc instanceof Laptop)) {
+            throw new Exception("### - Admit only new Desktop or new Laptop - ###");
         } else {
-            return $this->portable = "Portable";
+            if ($pc instanceof Desktop) {
+                return $this->portable = "NOT Portable";
+            } else {
+                return $this->portable = "Portable";
+            }
         }
     }
 }

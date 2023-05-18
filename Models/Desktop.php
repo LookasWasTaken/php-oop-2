@@ -8,6 +8,6 @@ class Desktop extends Computer {
     }
 
     public function getType() {
-        return "ATX";
+        return "Desktop";
     }
 }
