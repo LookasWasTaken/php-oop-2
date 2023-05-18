@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . "/Traits/Portability.php";
 require_once __DIR__ . "/Models/Computer.php";
 require_once __DIR__ . "/Models/Desktop.php";
 require_once __DIR__ . "/Models/Laptop.php";

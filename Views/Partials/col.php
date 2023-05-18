@@ -40,6 +40,9 @@
                                     <h6>Power Supply Unit: <?php echo $pc->getParam("psu") ?></h6>
                                 </li>
                                 <?php endif ?>
+                                <li>
+                                    <h6><?php echo $pc->setPortable($pc) ?></h6>
+                                </li>
                             </ul>
                         </div>
                     </div>

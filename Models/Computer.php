@@ -1,5 +1,7 @@
 <?php
 class Computer {
+
+    use Portability;
     
     public function __construct(protected string $brand, protected string $model, protected string $mobo, protected string $os, protected string $ram, protected string $cpu, protected string $gpu, protected string $storage) {
         $this->brand = $brand;
