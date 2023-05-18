@@ -1,15 +1,7 @@
 <?php
 class Computer {
-    protected $brand;
-    protected $model;
-    protected $mobo;
-    protected $os;
-    protected $ram;
-    protected $cpu;
-    protected $gpu;
-    protected $storage;
     
-    public function __construct(string $brand, string $model, string $mobo, string $os, string $ram, string $cpu, string $gpu, string $storage) {
+    public function __construct(protected string $brand, protected string $model, protected string $mobo, protected string $os, protected string $ram, protected string $cpu, protected string $gpu, protected string $storage) {
         $this->brand = $brand;
         $this->model = $model;
         $this->mobo = $mobo;
